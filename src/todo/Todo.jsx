@@ -31,7 +31,7 @@ const Todo = () => {
     return (
         <div>
             <div className="container">
-                <h1>Todo app</h1>
+                <h2>Todo app</h2>
                 <div className="input-field">
                     <input
                         value={todoTitle}

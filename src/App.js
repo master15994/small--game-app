@@ -1,8 +1,8 @@
 
 import './App.css';
 
-import Game from './Game';
-import Todo from './Todo';
+import Game from './game/Game.jsx'
+import Todo from './todo/Todo';
 
 const App = () => {
   return (

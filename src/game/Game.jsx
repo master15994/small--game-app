@@ -1,4 +1,5 @@
 import { useState } from "react"
+import g from './game.module.css'
 
 
 const Game = () => {
@@ -7,7 +8,7 @@ const Game = () => {
     return (
         <div>
             <div className="app">
-                <div className='column-1'>
+                <div className={g.column}>
                     <div>Марк Твен</div>
                     <div>
                         <input value={playerCount1} />
@@ -16,7 +17,7 @@ const Game = () => {
                         setPlayerCount1(a => a + 1)
                     }}>+</button>
                 </div>
-                <div className='column-1'>
+                <div className={g.column}>
                     <div>Жюль Верн</div>
                     <div>
                         <input value={playerCount2} />
@@ -26,13 +27,13 @@ const Game = () => {
                     }}>+</button>
                 </div>
                 <div>
-                    <button className='button-1' onClick={() => {
+                    <button className={g.button} onClick={() => {
                         setPlayerCount1(a => a - 1)
                         setPlayerCount2(a => a - 1)
                     }}>-</button>
                 </div>
                 <div>
-                    <button className='button-1' onClick={() => {
+                    <button className={g.button} onClick={() => {
                         setPlayerCount1(0)
                         setPlayerCount2(0)
                     }}>
